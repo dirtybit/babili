@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "babel-preset-babili": "^0.0.12",
-    "babel-cli": "^6.10.1"
+    "babel-cli": "7.0.0-alpha.6"
   },
   "devDependencies": {}
 }

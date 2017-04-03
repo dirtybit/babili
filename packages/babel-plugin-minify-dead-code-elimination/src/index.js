@@ -842,7 +842,7 @@ module.exports = ({ types: t, traverse }) => {
             } = {}
           } = {}
         ) {
-          traverse.clearCache();
+          traverse.cache.clear();
           path.scope.crawl();
 
           markEvalScopes(path);

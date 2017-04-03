@@ -45,7 +45,7 @@ module.exports = ({ types: t, traverse }) => {
     }
 
     cleanup() {
-      traverse.clearCache();
+      traverse.cache.clear();
       this.program.scope.crawl();
     }
 

@@ -682,7 +682,7 @@ describe("mangle-names", () => {
       code: false
     });
 
-    traverse.clearCache();
+    traverse.cache.clear();
 
     const actual = babel.transformFromAst(first.ast, null, {
       plugins: [require("../src/index")]
@@ -734,7 +734,7 @@ describe("mangle-names", () => {
       code: false
     });
 
-    traverse.clearCache();
+    traverse.cache.clear();
 
     const actual = babel.transformFromAst(first.ast, null, {
       plugins: [require("../src/index")]
@@ -847,7 +847,7 @@ describe("mangle-names", () => {
       code: false
     }).ast;
 
-    traverse.clearCache();
+    traverse.cache.clear();
 
     const actual = babel.transformFromAst(ast, null, {
       sourceType: "script",
